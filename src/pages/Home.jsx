@@ -6,7 +6,7 @@ const Home = () => {
   const navigate = useNavigate(); // ✅ Correct place for hook
 
   return (
-    <section className="h-screen w-full flex items-center justify-center text-center bg-gradient-to-br from-gray-900 via-gray-800 to-black px-4 pt-24">
+    <section className="min-h-screen w-full flex items-center justify-center text-center bg-gradient-to-br from-gray-900 via-gray-800 to-black px-4 pt-24">
       <div className="max-w-2xl">
         <h1 className="text-5xl sm:text-6xl font-bold text-white mb-4">
           Hi, I'm <span className="text-blue-400">Animesh</span>
