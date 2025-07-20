@@ -3,17 +3,18 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-[95vw] px-2 sm:px-0">
+    <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95vw] sm:w-auto px-2 sm:px-0">
       
-      {/* 🔵 Left Gradient Overlay */}
-      <div className="absolute top-0 left-0 h-full w-6 bg-gradient-to-r from-blue-300/50 to-transparent z-50 pointer-events-none rounded-l-full" />
-      
-      {/* 🔵 Right Gradient Overlay */}
-      <div className="absolute top-0 right-0 h-full w-6 bg-gradient-to-l from-blue-300/50 to-transparent z-50 pointer-events-none rounded-r-full" />
+      {/* 🔵 Left Gradient (only on small screens) */}
+      <div className="absolute top-0 left-0 h-full w-6 bg-gradient-to-r from-blue-300/50 to-transparent z-50 pointer-events-none rounded-l-full sm:hidden" />
 
-      {/* 🌐 Navbar Scroll Container */}
+      {/* 🔵 Right Gradient (only on small screens) */}
+      <div className="absolute top-0 right-0 h-full w-6 bg-gradient-to-l from-blue-300/50 to-transparent z-50 pointer-events-none rounded-r-full sm:hidden" />
+
+      {/* 🌐 Navbar Scrollable Container */}
       <nav
-        className="relative bg-black/30 backdrop-blur-md text-white py-3 px-4 sm:px-8 rounded-full shadow-xl overflow-x-auto scrollbar-thin scrollbar-thumb-blue-200 scrollbar-track-transparent"
+        className="relative bg-black/30 backdrop-blur-md text-white py-3 px-4 sm:px-8 rounded-full shadow-xl 
+        overflow-x-auto sm:overflow-visible scrollbar-thin scrollbar-thumb-blue-200 scrollbar-track-transparent"
       >
         <div className="flex gap-6 sm:gap-10 items-center text-sm sm:text-base font-medium whitespace-nowrap min-w-max">
           {[
@@ -40,13 +41,13 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* 💡 Scrollbar Styling */}
+      {/* 💡 Custom Scrollbar Styling */}
       <style jsx="true">{`
         nav::-webkit-scrollbar {
           height: 4px;
         }
         nav::-webkit-scrollbar-thumb {
-          background-color: #bfdbfe; /* Tailwind blue-200 */
+          background-color: #bfdbfe; /* blue-200 */
           border-radius: 9999px;
         }
         nav::-webkit-scrollbar-track {
