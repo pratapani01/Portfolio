@@ -1,39 +1,69 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: 'AI Rasoi',
+    title: 'AI Rasoi (HackIndia 2025)',
     description: 'A smart recipe recommender app using image & voice input with Gemini API.',
-    tech: ['React', 'Gradio', 'Tailwind', 'Python', 'Gemini'],
-    github: 'https://github.com/anianiani1/ai-rasoi',
+    tech: ['Gradio', 'Streamlit','Python', 'SpeechRecognition', 'Gemini'],
+    github: 'https://github.com/pratapani01/Ai_Rasoi',
     live: '#',
   },
   {
     title: 'Portfolio Website',
     description: 'My personal portfolio built with React and Tailwind CSS.',
     tech: ['React', 'Tailwind CSS', 'Vite'],
-    github: 'https://github.com/anianiani1',
+    github: 'https://github.com/pratapani01/Portfolio',
     live: '#',
   },
   {
     title: 'Landing Page (Codsoft)',
     description: 'Internship project - elegant and responsive single page.',
     tech: ['HTML', 'CSS', 'JavaScript'],
-    github: '#',
+    github: 'https://github.com/anianiani1/CodSoft/tree/Codsoft/Landing%20Page',
+    live: '#',
+  },
+  {
+    title: 'Youtube Clone (Explorin Academy)',
+    description: 'Internship project - Made using React, Vite, and Tailwind CSS.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/anianiani1/YoutubeClone',
+    live: '#',
+  },
+  {
+    title: 'Instagram Homepage Clone',
+    description: 'Elegant and responsive clone of Instagram\'s homepage.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/anianiani1/Instagram-Homepage',
+    live: '#',
+  },
+  {
+    title: 'Registration Dashboard',
+    description: 'A simple registration form and dashboard with user-friendly UI.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/pratapani01/Registration_Dashboard',
     live: '#',
   },
 ];
 
 const Projects = () => {
   return (
-    <section className="min-h-screen pt-24 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white px-6 py-16">
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -30 }}
+      transition={{ duration: 0.3 }}
+      className="min-h-screen pt-24 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white px-6 py-16"
+    >
       <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">My Projects</h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
         {projects.map((project, index) => (
-          <div
+          <motion.div
             key={index}
-            className="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-xl border border-white/10 hover:shadow-green-700/30 hover:scale-[1.03] transition-all duration-300"
+            whileHover={{ scale: 1.03 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+            className="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-xl border border-white/10 hover:shadow-green-700/30"
           >
             <h3 className="text-2xl font-semibold text-white mb-2">{project.title}</h3>
             <p className="text-gray-300 mb-4">{project.description}</p>
@@ -73,10 +103,10 @@ const Projects = () => {
                 </a>
               )}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -3,56 +3,57 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 bg-black/30 backdrop-blur-md text-white px-8 py-3 rounded-full shadow-xl flex gap-10 items-center text-sm sm:text-base font-medium">
-      <NavLink
-        to="/"
-        className={({ isActive }) =>
-          `transition-all duration-200 ease-in-out px-3 py-1 rounded-full ${
-            isActive
-              ? "bg-black text-white"
-              : "hover:scale-110 hover:bg-black/40 hover:text-white"
-          }`
-        }
+    <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-[95vw] px-2 sm:px-0">
+      
+      {/* 🔵 Left Gradient Overlay */}
+      <div className="absolute top-0 left-0 h-full w-6 bg-gradient-to-r from-blue-300/50 to-transparent z-50 pointer-events-none rounded-l-full" />
+      
+      {/* 🔵 Right Gradient Overlay */}
+      <div className="absolute top-0 right-0 h-full w-6 bg-gradient-to-l from-blue-300/50 to-transparent z-50 pointer-events-none rounded-r-full" />
+
+      {/* 🌐 Navbar Scroll Container */}
+      <nav
+        className="relative bg-black/30 backdrop-blur-md text-white py-3 px-4 sm:px-8 rounded-full shadow-xl overflow-x-auto scrollbar-thin scrollbar-thumb-blue-200 scrollbar-track-transparent"
       >
-        Home
-      </NavLink>
-      <NavLink
-        to="/about"
-        className={({ isActive }) =>
-          `transition-all duration-200 ease-in-out px-3 py-1 rounded-full ${
-            isActive
-              ? "bg-black text-white"
-              : "hover:scale-110 hover:bg-black/40 hover:text-white"
-          }`
+        <div className="flex gap-6 sm:gap-10 items-center text-sm sm:text-base font-medium whitespace-nowrap min-w-max">
+          {[
+            { name: "Home", path: "/" },
+            { name: "About", path: "/about" },
+            { name: "Skills", path: "/skills" },
+            { name: "Projects", path: "/projects" },
+            { name: "Contact", path: "/contact" },
+          ].map((link) => (
+            <NavLink
+              key={link.path}
+              to={link.path}
+              className={({ isActive }) =>
+                `transition-all duration-200 ease-in-out px-3 py-1 rounded-full font-semibold ${
+                  isActive
+                    ? "bg-white text-black shadow-md scale-105"
+                    : "hover:scale-110 hover:bg-white/20 hover:text-white"
+                }`
+              }
+            >
+              {link.name}
+            </NavLink>
+          ))}
+        </div>
+      </nav>
+
+      {/* 💡 Scrollbar Styling */}
+      <style jsx="true">{`
+        nav::-webkit-scrollbar {
+          height: 4px;
         }
-      >
-        About
-      </NavLink>
-      <NavLink
-        to="/projects"
-        className={({ isActive }) =>
-          `transition-all duration-200 ease-in-out px-3 py-1 rounded-full ${
-            isActive
-              ? "bg-black text-white"
-              : "hover:scale-110 hover:bg-black/40 hover:text-white"
-          }`
+        nav::-webkit-scrollbar-thumb {
+          background-color: #bfdbfe; /* Tailwind blue-200 */
+          border-radius: 9999px;
         }
-      >
-        Projects
-      </NavLink>
-      <NavLink
-        to="/contact"
-        className={({ isActive }) =>
-          `transition-all duration-200 ease-in-out px-3 py-1 rounded-full ${
-            isActive
-              ? "bg-black text-white"
-              : "hover:scale-110 hover:bg-black/40 hover:text-white"
-          }`
+        nav::-webkit-scrollbar-track {
+          background: transparent;
         }
-      >
-        Contact
-      </NavLink>
-    </nav>
+      `}</style>
+    </div>
   );
 };
 

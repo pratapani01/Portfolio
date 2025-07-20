@@ -27,3 +27,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
+/* Optional if you want to control star hover smoother */
+.transition-all {
+  transition-timing-function: ease-in-out;
+}
