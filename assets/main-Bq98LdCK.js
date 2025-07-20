@@ -70,7 +70,7 @@ Please change the parent <Route path="${N}"> to <Route path="${N==="/"?"*":`${N}
           height: 4px;
         }
         nav::-webkit-scrollbar-thumb {
-          background-color: #3b82f6; /* blue-300 */
+          background-color: #3b82f6; /* blue-100 */
           border-radius: 9999px;
         }
         nav::-webkit-scrollbar-track {
