@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import profilePic from '../assets/animesh.jpg';
+import profilePic from '../assets/animesh1.jpg';
 
 const About = () => {
   return (

@@ -3,17 +3,38 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: 'AI Rasoi (HackIndia 2025)',
-    description: 'A smart recipe recommender app using image & voice input with Gemini API.',
-    tech: ['Gradio', 'Streamlit','Python', 'SpeechRecognition', 'Gemini'],
-    github: 'https://github.com/pratapani01/Ai_Rasoi',
-    live: '#',
+    title: 'Sarpanch Sahayak',
+    description: 'Sarpanch Sahyak – A citizen grievance portal where villagers can raise complaints with photos, and the sarpanch can track and resolve them.',
+    tech: ['React', 'Tailwind CSS', 'MongoDB', 'Cloudinary', 'API', 'Render'],
+    github: 'https://github.com/pratapani01/Sarpanch-Sahayak',
+    live: 'https://sarpanch-sahayak.vercel.app/',
+  },
+  {
+    title: 'NCC RIT Portal',
+    description: 'An NCC information and engagement portal where students can explore NCC details, view the college photo gallery, and send queries directly.',
+    tech: ['React', 'Tailwind CSS', 'Vercel'],
+    github: 'https://github.com/pratapani01/ncc-website',
+    live: 'https://ncc-rit.vercel.app/',
   },
   {
     title: 'Portfolio Website',
     description: 'My personal portfolio built with React and Tailwind CSS.',
     tech: ['React', 'Tailwind CSS', 'Vite'],
     github: 'https://github.com/pratapani01/Portfolio',
+    live: 'https://pratapani01.github.io/Portfolio/',
+  },
+  {
+    title: 'Postify | Social Media App',
+    description: 'A social media application built with React, Tailwind CSS, Vite, Cloudinary, MongoDB',
+    tech: ['React', 'Tailwind CSS', 'Vite', 'Cloudinary', 'MongoDB'],
+    github: 'https://github.com/pratapani01/Postify',
+    live: 'https://postify-ani.vercel.app/',
+  },
+  {
+    title: 'AI Rasoi (HackIndia 2025)',
+    description: 'A smart recipe recommender app using image & voice input with Gemini API.',
+    tech: ['Gradio', 'Streamlit','Python', 'SpeechRecognition', 'Gemini'],
+    github: 'https://github.com/pratapani01/Ai_Rasoi',
     live: '#',
   },
   {
