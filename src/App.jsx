@@ -13,7 +13,7 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
 function App() {
-  const location = useLocation(); // Needed for AnimatePresence to detect route changes
+  const location = useLocation();
 
   return (
     <>

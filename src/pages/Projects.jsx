@@ -3,6 +3,13 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
+  title: 'GramConnect AI',
+  description: 'A full-stack smart governance platform designed for rural communities. Citizens can submit complaints with photo evidence, track resolution progress, and receive real-time updates, while Sarpanch and administrators manage, prioritize, and resolve issues through dedicated dashboards. The system includes AI-assisted workflows, automated escalation, role-based access control, location management, and cloud-based media storage.',
+  tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Cloudinary', 'Tailwind CSS', 'JWT', 'Render', 'Vercel'],
+  github: 'https://github.com/pratapani01/Gram_Connect-AI',
+  live: 'https://gram-connect-ai.vercel.app/citizen',
+},
+  {
     title: 'Sarpanch Sahayak',
     description: 'Sarpanch Sahyak – A citizen grievance portal where villagers can raise complaints with photos, and the sarpanch can track and resolve them.',
     tech: ['React', 'Tailwind CSS', 'MongoDB', 'Cloudinary', 'API', 'Render'],
