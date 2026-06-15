@@ -94,10 +94,7 @@ const Contact = () => {
             <a href="https://github.com/pratapani01" target="_blank" rel="noreferrer" className="text-blue-400 hover:underline">
               pratapani01
             </a>
-            &nbsp;|&nbsp;
-            <a href="https://github.com/anianiani1" target="_blank" rel="noreferrer" className="text-blue-400 hover:underline">
-              anianiani1
-            </a>
+            &nbsp;
           </p>
         </div>
       </div>

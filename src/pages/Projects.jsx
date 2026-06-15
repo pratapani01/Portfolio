@@ -4,73 +4,63 @@ import { motion } from 'framer-motion';
 const projects = [
   {
   title: 'GramConnect AI',
-  description: 'A full-stack smart governance platform designed for rural communities. Citizens can submit complaints with photo evidence, track resolution progress, and receive real-time updates, while Sarpanch and administrators manage, prioritize, and resolve issues through dedicated dashboards.',
-  tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Cloudinary', 'Tailwind CSS', 'JWT', 'Render', 'Vercel'],
+  description:
+    'A full-stack AI-powered rural governance platform with both web and mobile application support. Features JWT authentication, role-based dashboards, grievance tracking, Cloudinary image uploads, real-time complaint management, and government scheme assistance for citizens and administrators.',
+  tech: [
+    'React',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'Cloudinary',
+    'Tailwind CSS',
+    'JWT',
+    'Render',
+    'Vercel',
+  ],
   github: 'https://github.com/pratapani01/Gram_Connect-AI',
   live: 'https://gram-connect-ai.vercel.app/citizen',
 },
-  {
-    title: 'Sarpanch Sahayak',
-    description: 'Sarpanch Sahyak – A citizen grievance portal where villagers can raise complaints with photos, and the sarpanch can track and resolve them.',
-    tech: ['React', 'Tailwind CSS', 'MongoDB', 'Cloudinary', 'API', 'Render'],
-    github: 'https://github.com/pratapani01/Sarpanch-Sahayak',
-    live: 'https://sarpanch-sahayak.vercel.app/',
-  },
-  {
-    title: 'NCC RIT Portal',
-    description: 'An NCC information and engagement portal where students can explore NCC details, view the college photo gallery, and send queries directly.',
-    tech: ['React', 'Tailwind CSS', 'Vercel'],
-    github: 'https://github.com/pratapani01/ncc-website',
-    live: 'https://ncc-rit.vercel.app/',
-  },
-  {
-    title: 'Portfolio Website',
-    description: 'My personal portfolio built with React and Tailwind CSS.',
-    tech: ['React', 'Tailwind CSS', 'Vite'],
-    github: 'https://github.com/pratapani01/Portfolio',
-    live: 'https://pratapani01.github.io/Portfolio/',
-  },
+
   {
     title: 'Postify | Social Media App',
-    description: 'A social media application built with React, Tailwind CSS, Vite, Cloudinary, MongoDB',
-    tech: ['React', 'Tailwind CSS', 'Vite', 'Cloudinary', 'MongoDB'],
+    description:
+      'A MERN-based social networking platform with user authentication, post creation, image uploads, likes, comments, and real-time user engagement features.',
+    tech: [
+      'React',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Cloudinary',
+      'JWT',
+      'Tailwind CSS',
+      'Vite',
+    ],
     github: 'https://github.com/pratapani01/Postify',
     live: 'https://postify-ani.vercel.app/',
   },
+
   {
     title: 'AI Rasoi (HackIndia 2025)',
-    description: 'A smart recipe recommender app using image & voice input with Gemini API.',
-    tech: ['Gradio', 'Streamlit','Python', 'SpeechRecognition', 'Gemini'],
+    description:
+      'An AI-powered recipe recommendation system using Gemini API with voice and image-based inputs, delivering personalized recipe suggestions through an interactive interface.',
+    tech: [
+      'Python',
+      'Gemini API',
+      'Gradio',
+      'Streamlit',
+      'SpeechRecognition',
+    ],
     github: 'https://github.com/pratapani01/Ai_Rasoi',
     live: '#',
   },
+
   {
-    title: 'Landing Page (Codsoft)',
-    description: 'Internship project - elegant and responsive single page.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/anianiani1/CodSoft/tree/Codsoft/Landing%20Page',
-    live: '#',
-  },
-  {
-    title: 'Youtube Clone (Explorin Academy)',
-    description: 'Internship project - Made using React, Vite, and Tailwind CSS.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/anianiani1/YoutubeClone',
-    live: '#',
-  },
-  {
-    title: 'Instagram Homepage Clone',
-    description: 'Elegant and responsive clone of Instagram\'s homepage.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/anianiani1/Instagram-Homepage',
-    live: '#',
-  },
-  {
-    title: 'Registration Dashboard',
-    description: 'A simple registration form and dashboard with user-friendly UI.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/pratapani01/Registration_Dashboard',
-    live: '#',
+    title: 'NCC RIT Portal',
+    description:
+      'A responsive information portal for NCC cadets featuring activity updates, photo galleries, query management, and improved communication between students and coordinators.',
+    tech: ['React', 'Tailwind CSS', 'Vercel'],
+    github: 'https://github.com/pratapani01/ncc-website',
+    live: 'https://ncc-rit.vercel.app/',
   },
 ];
 
